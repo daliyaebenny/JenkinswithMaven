@@ -18,7 +18,7 @@ pipeline{
         stage('Deploy'){
                     steps{
                         withMaven(maven:'3.8.6'){
-                        bat 'mvn deploy'
+                        bat 'mvn spring-boot:run'
                         }
                     }
         }
